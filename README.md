@@ -4,7 +4,7 @@ AIRLocalizedString
 `AIRLocalizedString` allows you to update i18n texts without compelling users to update the App.
 
 ```objc
-[AIRLocalizedString setRemoteBaseURL:@"https://s3.amazonaws.com/.../"];
+[[AIRLocalizedStringService service] startWithBaseURLString:@"https://s3.amazonaws.com/.../"];
 
 AIRLocalizedString(@"Hello World!", @"");
 
